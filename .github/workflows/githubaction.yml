@@ -1,0 +1,17 @@
+name: mydonet project
+
+on: 
+  push:
+    branches:
+      - develop
+
+jobs:
+  dotnet_publish:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: this is my dotnet publish command
+        run: dotnet publish -c Release src/Presentation/Nop.Web/Nop.Web.csproj -o sravanthi
