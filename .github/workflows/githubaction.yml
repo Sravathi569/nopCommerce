@@ -29,4 +29,4 @@ jobs:
           SONAR_HOST_URL: https://sonarcloud.io
 
       - name: Publish .NET project
-        run: dotnet publish -c Release src/Presentation/Nop.Web/Nop.Web.csproj -o gandru
+        run: dotnet publish -c Release src/Presentation/Nop.Web/Nop.Web.csproj -o sravs
