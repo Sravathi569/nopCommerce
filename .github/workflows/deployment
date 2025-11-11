@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nop-commerce-deployment
+  labels:
+    app: nop-commerce
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nop-commerce
+  template:
+    metadata:
+      labels:
+        app: nop-commerce
+    spec:
+      containers:
+        - name: nop-commerce
+          image: 877560973663.dkr.ecr.us-east-1.amazonaws.com/mynewone:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
