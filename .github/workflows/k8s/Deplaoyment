@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nop-commerce
-          image: 088609649172.dkr.ecr.ap-southeast-1.amazonaws.com/newrepo:latest
+          image: 877560973663.dkr.ecr.us-east-1.amazonaws.com/mynewone:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
