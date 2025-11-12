@@ -64,4 +64,4 @@ jobs:
         run: |
           kubectl apply -f k8s/
           kubectl rollout status deployment/nop-commerce-deployment
-           kubectl get svc
+          kubectl get svc
