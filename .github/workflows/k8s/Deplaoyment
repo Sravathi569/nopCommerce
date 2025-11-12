@@ -4,7 +4,7 @@ metadata:
   name: nop-commerce-deployment
   labels:
     app: nop-commerce
-  namespace: devnamespace
+  
 spec:
   replicas: 2
   selector:
