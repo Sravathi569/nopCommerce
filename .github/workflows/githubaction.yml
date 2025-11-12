@@ -53,7 +53,7 @@ jobs:
             
       - name: Configure kubectl for EKS
         run: |
-          aws eks update-kubeconfig --name unique-outfit-1762842639 --region us-east-1
+          aws eks update-kubeconfig --name hilarious-mongoose-1762925037 --region us-east-1
       
       - name: creating and switching namespaces
         run: |
